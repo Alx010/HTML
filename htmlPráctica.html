@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- Decirle al navegador que es un documento HTML -->
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<!-- Decirle al navegador que el documento utiliza el juego de carácteres 'UTF-8'(https://es.wikipedia.org/wiki/UTF-8) -->
+
+<head>
+    <title>Título de la página web</title>
+</head>
+
+<!-- Nombre del documento -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Título de la página web</title>     
+    </head>
+    <body>
+        <!-- Aquí iría el contenido de la página -->
+    </body>
+</html>
+
+<!-- Estructura básica del documento HTML -->
+
+<div class="sección"></div> <!-- Nombre de la sección para utilizarla en documentos CSS o JS -->
+
+<!-- Para separar al documento HTML en capas -->
+
+<h1>Hola, mundo!</h1>
+
+<!-- Esto sirve para crear un texto con el máximo tamaño de letra posible con HTML -->
+<!-- Esta etiqueta puede ir desde el 1 (más grande) al 6 (más pequeño) -->
+
+<div class="sección">
+    <h1>Hola, mundo!</h1>
+    <div class="subsección">
+        <h2>Hey mundo desde h2</h2>
+    </div>
+</div>
+
+<!-- En HTML puedes crear un div que contenga más divs dentro de si mismo -->
+
+<article>Hola mundo!</article>
+
+<!-- El elemento article nos permite definir una pieza independiente y auto-contenida dentro de un documento HTML 5. -->
+<!-- Más información en la foto ./Ayuda HTML.png -->
+
+<aside></aside>
+
+<!-- Sirve para separar un contenido a un lado similar a section en la que es comunmente utilizada como una barra lateral -->
+<!-- Más información en la foto ./Ayuda HTML.png -->
+
+<section></section>
+
+<!-- Section es un elemento que representa una sección independiente dentro de un documento HTML 5, la cual no puede ser 
+representada por otro elemento semántico más específico como podrían ser: nav, article, aside-->
+<!-- Esta normalmente tiene el elemento h1 a h6 para decir el título de esa sección -->
+<!-- Más información en la foto ./Ayuda HTML.png -->
+
+<header></header>
+
+<!-- Sirve para definir un encabezado o cabecera de un documento HTML 5 -->
+<!-- Más información en la foto ./Ayuda HTML.png -->
+
+<footer></footer>
+
+<!-- El elemento footer sirve para definir el pie de página de un documento. -->
+<!-- En los pie de página de los documentos se suele incluir el copyright u otros elementos legales. -->
+
+<section>
+    <h1>Titulo principal</h1>
+  
+    <section>
+      <h1>Subtítulo 1</h1>
+      <p>Contenido se la primera sección.</p>
+    </section>
+  
+    <section>
+      <h1>Subtítulo 2</h1>
+      <p>Contenido se la segunda sección.</p>
+    </section>
+  
+    <section>
+      <h1>Subtítulo 3</h1>
+      <p>Contenido se la tercera sección.</p>
+    </section>
+  
+    <aside>
+      <p>Publicidad</p>
+    </aside>
+  
+</section>
+  
+<footer>
+    <p>Pie de Página de la web</p>
+</footer>
+
+<!-- Ejemplo completo de los elementos mencionados anteriormente -->
+
+<section>
+    <h1>Artículo principal</h1>
+    <p>Texto del artículo principal.</p>
+  
+    <section>
+        <h2>Subsección</h2>
+        <p>Contenido secundario del artículo principal</p>
+    </section>
+</section>
+  
+<section>
+    <h4>Artículo Secundario</h4>
+    <p>Contenido del artículo secundario.</p>
+</section>
+
+<!-- Ejemplo con secciones -->
+
+<section>
+    <h1>Artículo principal</h1>
+    <p>Texto del artículo principal.</p>
+  
+    <h2>Subsección</h2>
+    <p>Contenido secundario del artículo principal</p>
+  
+</section>
+
+<!-- Secciones implícitas -->
+<!-- Sirven para mantener compatibilidad con documentos HTML 4 utilizando solamente una sección -->
+
+<section>
+    <h1>Título 1</h1>
+    <p>Texto del artículo.</p>
+  
+    <h1>Título 2</h1>
+    <p>Texto del artículo.</p>
+  
+</section>
+
+<!-- Creación de elemento section implicitamente, ya que al no poderse poner dos elementos h1, se crea una especia de -->
+<!-- sección que contiene ambos elementos h1 -->
+
+<blockquote>
+    <p>Texto del bloque de cita.</p>
+</blockquote>
+
+<!-- Ejemplo de bloque de cita, sirve para enfatizar pequeñas frases -->
+
+<details>
+    <h1>Título dentro de la lista detalles</h1>
+    <p>Texto dentro de la lista detalles</p>
+</details>
+
+<!-- Lista que es normalmente utilizada para dar detalles de algo -->
+
+<fieldset>
+    <legend>Título del campo de texto</legend> <!-- Título del campo de texto -->
+    <p>Texto del campo de texto</p>
+</fieldset>
+
+<!-- Campo de texto que sirve para agrupar una serie de elementos -->
+
+<figure>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+    <figcaption>
+        <h1>Hola, mundo!</h1>
+        <p>Esto es una imagen</p>
+    </figcaption>
+</figure>
+
+<!-- Figura que sirve para agrupar una imagen con un texto -->
+
+<address>
+    <h1>Título del elemento address</h1>
+    <p>Texto del elemento address</p>
+</address>
+
+<!-- Cuadro de texto que sirve normalmente para dar información de contacto -->
+
+<input type="text">
+
+<!-- Elemento input, sirve para tomar valores el cuál ha obtenido diferentes novedades -->
+
+<input type="text", name="nombre-del-input", id="identificador", placeholder="Nombre"> 
+
+<!-- El placeholder se mostrará como un  texto difuminado dentro del input-->
+
+<input type="text" name="input1" id="input1-bis" autocomplete="on">
+
+<!-- Sirve para el autocompletado externo, p.ej: contraseñas, etc. una lista con todos los atributos que se pueden poner es:-->
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete -->
+
+<input type="text" name="input1" id="input1" autofocus>
+
+<!-- Cuando se añade el atributo autofocus, haces que este input se renderice antes que el resto -->
+<!-- IMPORTANTE - NO SE PUEDE AÑADIR MÁS DE UNO EN EL FORMULARIO-->
+
+<input type="tipo" id="identificador" size="tamaño" name="nombre" value="texto por defecto"/>
+
+<!-- Los input tienen diferentes tipos de input, los cuales son: search, email, url, tel, range, number, date y color (HTML5) -->
+<!-- text, radio, checkbox, password, file, hidden y submit (hasta HTML4.1) -->
+
+<!-- Los atributos minlength y maxlength sirven para definir el tamaño del input y el máximo de caracteres que puede tener -->
+
+<input type="text" id="nombre" minlength="numero" maxlength="numero"/>
+
+<!-- Más información sobre los elementos input: https://www.manualweb.net/html5/formularios-elementos-input/ -->
+
+<datalist id="miLista">
+    <option>Opción 1</option>
+    <option>Opción 2</option>
+    <option>Opción 3</option>
+    <option>Opción 4</option>
+    ...
+    <option>Opción N</option>        
+  </datalist>
+  
+<!-- Lista de opciones que se pueden utilizar en un input -->
+<!-- Más tarde se debera añadir el atributo list al input para conseguir un efecto de autocompletado -->
+
+<input type="text" name="lista" id="lista" list="miLista">
+
+<!-- Atributos que se pueden añadir a un input: <!-- autocomplete, autofocus, list, max, min, multiple, pattern, placeholder, readonly, required, step, value -->-->
+
+<!-- -->
+
+<datalist id="miLista">
+    <option label="Texto 1" value="Valor 1"></option>
+    <option label="Texto 2" value="Valor 2"></option>
+    <option label="Texto 3" value="Valor 3"></option>
+    ...
+    <option label="Texto N" value="Valor N"></option>      
+</datalist>
+
+<!-- En las option tambien se puede utilizar el atributo label para mostrar el texto que se desee -->
+<!-- y con el atributo value se puede atribuir el valor a esa opción -->
+<!-- Pero si se diera el caso de que un navegador sea algo antiguo se puede añadir el elemento <select> -->
+<label for="misurl">Dinos tu URL:</label>
+<input type="url" id="misurl" list="listaurls" />
+<datalist id="listaurls">
+    <label for="elemento">O eligela de la siguiente lista:</label>
+    <select id="elementos" name="elementos">
+        <option value="http://lineadecodigo.com" label="Línea de Código">
+        <option value="http://www.manualweb.net" label="Manual Web">
+        <option value="http://www.dudasprogramacion.com" label="Dudas de Programación">
+        <option value="http://www.w3api.com" label="W3Api">
+    </select>
+</datalist>
+
+<!-- Barras de progreso -->
+
+<progress max="valor_maximo" value="valor_actual"></progress>
+
+<!-- Para indicar los máximos y mínimos de una barra de progreso se utilizan los atributos max y min respectivamente -->
+
+<progress max="100" value="25">25/100</progress>
+
+<!-- Para indicar el valor actual de la barra de progreso se utiliza el atributo value -->
+
+<meter min="valor_minimo" max="valor_maximo"></meter>
+
+<!-- Para indicar el valor mínimo y máximo de una barra de progreso se utilizan los atributos min y max respectivamente -->
+
+<meter min="valor_minimo" max="valor_maximo" low="valor_inferior" high="valor_superior"></meter>
+
+<!-- Para indicar el valor mínimo, máximo y valor inferior y superior de una barra de progreso se utilizan los atributos low, high y optimum respectivamente -->
+
+<meter min="valor_minimo" max="valor_maximo" low="valor_inferior" high="valor_superior" optimum="valor_optimo" value="valor"></meter>
+
+<!-- Por último el atributo value sirve para dar el estado actual de la barra -->
+
+<!-- Ejemplo final -->
+
+<meter min="0" max="100" value="80" low="25" high="75" optimum="90">80/100</meter>
+
+<!-- Elemento output -->
+
+<output for="valores" form="id-formulario" name="nombre"></output>
+
+<!-- El elemento output nos va a servir para mostrar resultados de cálculos dentro de un formulario. -->
+
+<!-- Atributos-->
+
+<!-- El atributo for nos servirá para saber quién es el contribuidor del resultado del componente output -->
+
+<input type="number" id="e1"/>
+<input type="number" id="e2"/>
+<output for="e1 e2"></output>
+
+<!-- El atributo form nos sirve para identificar al formulario del cual depende el elemento output -->
+<!-- por lo que su valor será el id de dicho formulario. -->
+
+<form id="myform" action="#">
+    <input type="number" id="e1"/>
+    <input type="number" id="e2"/>
+    <output for="e1 e2" form="myform"></output>
+</form>
+
+
+<!-- El atributo form es importante ya que nos permite poner el elemento output en cualquier parte del documento -->
+
+<form id="myform" action="#">
+    <input type="number" id="e1"/>
+    <input type="number" id="e2"/>
+</form>
+<h2>Resultado</h2>
+<output for="e1 e2" form="myform"></output>
+
+<!-- Por último el atributo name simplemente le da el nombre -->
+
+<form id="myform" action="#">
+    <input type="number" id="e1"/>
+    <input type="number" id="e2"/>
+    <output for="e1 e2" form="myform" name="resultado"></output>
+</form>
+
+<!-- Cálculos en output -->
+
+<form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="resultado">60</output>
+</form>
+
+<!-- Para que el output se actualice automáticamente al cambiar el valor de un input se utiliza el atributo oninput -->
+
+<!-- RegEx -->
+
+<!-- Con el componente input se debe de añadir el atributo pattern seguido de la expresion de regex -->
+<!-- Más info en la foto ./RegEx.png o en la página web: https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions-->
+
+
+<!-- Multimedia en HTML5 -->
+
+<video src="mivideo.webm" controls>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El componente video nos permite reproducir video en el navegador y si este no es compatible mandar la frase escrita -->
+<!-- El atributo src nos indica la dirección del vídeo y el atributo controls permite controlar el video de diferentes maneras-->
+
+<video src="mivideo.webm" width="600" height="400" controls>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo width y height nos sirven para indicar el tamaño del video -->
+
+<video src="mivideo.webm" autoplay controls>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo autoplay nos permite reproducir el video en el momento que se carga la página -->
+
+<video src="mivideo.webm" autoplay loop>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo loop nos permite que el video se reproduzca en bucle -->
+
+<video src="mivideo.webm" autoplay muted>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo muted nos permite silenciar el video -->
+
+<video src="mivideo.webm" controls poster="mivideo.png">
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo poster nos permite mostrar una imagen cuando el video no se esté reproduciendo -->
+
+<video src="mivideo.webm" controls preload="auto">
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo preload nos permite cargar el video antes de que se reproduzca -->
+<!-- El valor auto indica que se cargue el video cuando se cargue la página -->
+<!-- El valor metadata indica que se cargue el video cuando se cargue la página y cuando se cargue la imagen poster -->
+<!-- El valor none indica que no se cargue el video -->
+
+<video controls>
+    <source src="mivideo.mp4" type="video/mp4"/>
+    <source src="mivideo.webm" type="video/webm"/>
+    <p>Su navegador no soporta vídeos HTML5.</p>
+</video>
+
+<!-- El atributo type nos permite indicar el tipo de fichero que se está enlazando -->
+<!--  El elemento source es un elemento anidado al elemento video y nos sirve para enlazar diferentes ficheros de vídeo en formatos diferentes. -->
+
+<!-- Formatos admitidos por HTML: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats -->
+
