@@ -1,3 +1,3 @@
 # HTML
 
-Este repositorio irá aumentando en tamaño a medida de que vaya haciendo apuntes
+Este repositorio está terminado, si ves que falta algo haz un PR
