@@ -1,3 +1,5 @@
+<!-- Si tienen alguna sugerencia simplemente hacer un PR con lo que queráis añadir y ya está -->
+
 <!DOCTYPE html>
 <!-- Decirle al navegador que es un documento HTML -->
 
@@ -390,3 +392,24 @@ representada por otro elemento semántico más específico como podrían ser: na
 
 <!-- Formatos admitidos por HTML: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats -->
 
+<!-- Elemento canvas -->
+
+<canvas id="micanvas" height="200" width="400"></canvas>
+
+<!-- El elemento canvas nos permite dibujar en el navegador -->
+
+<canvas id="micanvas" height="200" width="400">
+    Su navegador no soporta el elemento Canvas. Le recomendamos que se actualice a una versión más moderna.
+</canvas>
+
+<!-- El atributo height y width nos sirven para indicar el tamaño del canvas -->
+<!-- Poner un texto en dentro del atributo canvas servirá para que si no carga la imagen o el navegador no sea compatible 
+que lo sepa el dueño del dispositivo -->
+
+<!-- o poner una imagen alternativa -->
+
+<canvas id="micanvas" height="200" width="400">
+    <img src="imagenAlternativa.png"/>
+</canvas>
+
+<!-- para más información sobre la modificación del canvas (con JS) visitar: https://www.manualweb.net/html5/canvas/ -->
